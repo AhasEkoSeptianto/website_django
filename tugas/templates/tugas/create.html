@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block css %}
+	
+{% endblock css %}
+
+{% block jumbotron %}
+	
+{% endblock jumbotron %}
+
+{% block content %}
+	<div class="container content shadow bg-white p-4 " style="margin-top:200px">
+        <h3>Tambah Tugas</h3>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+			<h5>{{namaTugas}}</h5>
+            
+            {% for tugas in formcreate %}
+                <div class="form-group">
+                    {{tugas.label}}
+                    {{tugas}}
+                </div>
+            {% endfor %}
+
+            <button class="btn btn-primary" type="submit">Tambah</button>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'tugas/css/daftarTugas.css' %}">
+{% endblock css %}
+    
+{% block jumbotron %}
+  
+{% endblock jumbotron %}
+
+{% block content %}
+<div class="main">
+    <h3 style="margin: 200px 0px 150px 0px; text-align: center;">{{database.pertemuan1}}</h3>
+    <div class="container shadow content" id="list">
+    
+    <table class="table">
+        <thead>
+          <h3 style="text-align: center;">{{matakuliah}}</h3>
+          <tr>
+            <th scope="col">Sesi</th>
+            <th scope="col">Tugas</th>
+            <th scope="col">ubah</th>
+            <th scope="col">hapus</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for mapel in matkul %}
+          <tr>
+
+            <td>Pertemuan{{mapel.Pertemuan}}</td>
+            <td>
+              <p><a href="/media/{{mapel.File_tugas}}">{{mapel.File_tugas}}</a></p>
+              <p><a href="/media/{{mapel.Fle_soal}}">{{mapel.Fle_soal}}</a></p>
+            </td>
+            <td>
+              <a href="update/{{mapel.id}}/{{mapel.Pertemuan}}"><button class="btn btn-warning btn-sm">Update</button></a>
+            </td>
+            <td>
+              <a href="delete/{{mapel.id}}"><button class="btn btn-danger btn-sm">Delete</button></a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <a href="create/"><button class="btn btn-info btn-sm mb-3">Tambah</button></a>
+  </div>
+</div>
+{% endblock content %}
+    

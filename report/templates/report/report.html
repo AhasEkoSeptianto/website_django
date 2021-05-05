@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'report/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'report/css/stylereport.css' %}">
+{% endblock css %}
+    
+
+{% block jumbotron %}
+  
+{% endblock jumbotron %}
+  
+
+{% block content %}
+    <div class="container-fluid" style="margin-top: 350px;" >
+        <div class="container content">
+            <h1>{{bulan}}</h1>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 choices">
+                    <ul class="nav justify-content-center ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              2020
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/report/2020/januari">Januari</a>
+                              <a class="dropdown-item" href="/report/2020/februari">February</a>
+                              <a class="dropdown-item" href="/report/2020/maret">Maret</a>
+                              <a class="dropdown-item" href="/report/2020/april">April</a>
+                              <a class="dropdown-item" href="/report/2020/mei">Mei</a>
+                              <a class="dropdown-item" href="/report/2020/juni">Juni</a>
+                              <a class="dropdown-item" href="/report/2020/juli">Juli</a>
+                              <a class="dropdown-item" href="/report/2020/agustus">Agustus</a>
+                              <a class="dropdown-item" href="/report/2020/september">September</a>
+                              <a class="dropdown-item" href="/report/2020/oktober">Oktober</a>
+                              <a class="dropdown-item" href="/report/2020/november">November</a>
+                              <a class="dropdown-item" href="/report/2020/desember">Desember</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              2021
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/report/2021/januari">Januari</a>
+                              <a class="dropdown-item" href="/report/2021/februari">February</a>
+                              <a class="dropdown-item" href="/report/2021/maret">Maret</a>
+                              <a class="dropdown-item" href="/report/2021/april">April</a>
+                              <a class="dropdown-item" href="/report/2021/mei">Mei</a>
+                              <a class="dropdown-item" href="/report/2021/juni">Juni</a>
+                              <a class="dropdown-item" href="/report/2021/juli">Juli</a>
+                              <a class="dropdown-item" href="/report/2021/agustus">Agustus</a>
+                              <a class="dropdown-item" href="/report/2021/september">September</a>
+                              <a class="dropdown-item" href="/report/2021/oktober">Oktober</a>
+                              <a class="dropdown-item" href="/report/2021/november">November</a>
+                              <a class="dropdown-item" href="/report/2021/desember">Desember</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              2022
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/report/2022/januari">Januari</a>
+                              <a class="dropdown-item" href="/report/2022/februari">February</a>
+                              <a class="dropdown-item" href="/report/2022/maret">Maret</a>
+                              <a class="dropdown-item" href="/report/2022/april">April</a>
+                              <a class="dropdown-item" href="/report/2022/mei">Mei</a>
+                              <a class="dropdown-item" href="/report/2022/juni">Juni</a>
+                              <a class="dropdown-item" href="/report/2022/juli">Juli</a>
+                              <a class="dropdown-item" href="/report/2022/agustus/#">Agustus</a>
+                              <a class="dropdown-item" href="/report/2022/september">September</a>
+                              <a class="dropdown-item" href="/report/2022/oktober">Oktober</a>
+                              <a class="dropdown-item" href="/report/2022/november">November</a>
+                              <a class="dropdown-item" href="/report/2022/desember">Desember</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              2023
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/report/2023/januari">Januari</a>
+                              <a class="dropdown-item" href="/report/2023/februari">February</a>
+                              <a class="dropdown-item" href="/report/2023/maret">Maret</a>
+                              <a class="dropdown-item" href="/report/2023/april">April</a>
+                              <a class="dropdown-item" href="/report/2023/mei">Mei</a>
+                              <a class="dropdown-item" href="/report/2023/juni">Juni</a>
+                              <a class="dropdown-item" href="/report/2023/juli">Juli</a>
+                              <a class="dropdown-item" href="/report/2023/agustus">Agustus</a>
+                              <a class="dropdown-item" href="/report/2023/september">September</a>
+                              <a class="dropdown-item" href="/report/2023/oktober">Oktober</a>
+                              <a class="dropdown-item" href="/report/2023/november">November</a>
+                              <a class="dropdown-item" href="/report/2023/desember">Desember</a>
+                            </div>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+            <div class="row">
+              <div class="container data table-responsive-lg"  >
+                    <table class="table table-hover bg-white">
+                        <thead>
+                          <tr>
+                            <th scope="col">Tanggal</th>
+                            <th scope="col">Noted</th>
+                            <th scope="col">Update</th>
+                            <th scope="col">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% block report %}
+                            {% for post in data %}
+                            <tr>
+                              <td>{{post.tanggal}}</td>
+                              <td>{{post.body}}</td>
+                              <td><a href="update/{{post.id}}/#data"><div class="btn btn-sm btn-warning">Update</div></a></td>
+                              <td><a href="delete/{{post.id}}/#data"><div class="btn btn-sm btn-danger">Delete</div></a></td>
+                            </tr> 
+                            {% endfor %}
+                          {% endblock report %}
+                          
+                        </tbody>
+                    </table >
+                    
+                    <div class="container">
+                    {% block tombol %}
+                      <a href="create">
+                        <button class="btn btn-primary btn-sm ml-4 mb-4">Tambah</button></td>
+                        </a>
+                      {% endblock tombol %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+    

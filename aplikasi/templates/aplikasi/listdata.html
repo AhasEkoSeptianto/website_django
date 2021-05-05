@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'aplikasi/css/stylelistdata.css' %}">
+{% endblock css %}
+    
+
+{% block jumbotron %}
+    
+{% endblock jumbotron %}
+
+
+{% block content %}
+    <div class="container content shadow text-center p-5">
+            <h2>{{tambah.namaaplikasi}}</h2>
+            <img src="/media/{{tambah.gambaraplikasi}}" class="img-fluid" alt="Responsive image">
+            <p style="margin-top: 50px;">{{tambah.penjelasan}}</p>
+            <div class="form-group">
+                <label for=""></label>
+                <a href="/media/{{tambah.fileaplikasi}}" download><button class="btn btn-primary" type="submit">Download</button></a>
+            </div>
+    </div>
+{% endblock content %}

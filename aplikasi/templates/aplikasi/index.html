@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'aplikasi/css/style.css' %}">
+{% endblock css %}
+    
+
+{% block jumbotron %}
+    
+{% endblock jumbotron %}
+    
+
+
+{% block content %}
+    <div class="row content ">
+        <div class="col-lg-3 list">
+          <h3>Tab Cepat</h3>
+          <ul>
+            
+            {% for listdata in semua %}
+              
+            <li><a href="#{{listdata.namaaplikasi}}">> {{listdata.namaaplikasi}}</a></li>
+
+            {% endfor %}
+              
+          </ul>
+        </div>
+        <!-- list aplikasi -->
+        <div class="col-lg-8 shadow p-4">
+            <h1>Skill required</h1>
+            
+            {% for listdata in semua %}
+            <div class="card p-5 text-center mt-5" id="{{listdata.namaaplikasi}}">
+              <img src="/media/{{listdata.gambaraplikasi}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-tittle">{{listdata.namaaplikasi}}</h5>
+                <p class="card-text">{{listdata.contentaplikasi}}</p>
+                <a href="{{listdata.slug}}"><button class="btn btn-primary" type="submit">Check it</button></a>
+              </div>
+            </div>
+            {% endfor %}
+                
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+    </div>
+{% endblock content %}
+    

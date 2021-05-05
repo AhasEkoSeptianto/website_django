@@ -1,0 +1,30 @@
+{% load static %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Ekozi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link {% if Home %} active {% endif %}" href="{% url 'index' %}">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% if About %} active {% endif %}" href="{% url 'about:index' %}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if Report %} active {% endif %}" href="{% url 'report:index' %}">Laporan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if Tugas %} active {% endif %}" href="{% url 'tugas:index' %}">Tugas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if Aplikasi %} active {% endif %}" href="{% url 'aplikasi:index' %}">aplikasi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/login">login</a>
+            </li>
+          </ul>
+        </div>
+    </nav>

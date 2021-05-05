@@ -1,0 +1,123 @@
+#jumbotron{
+    height: 700px;
+    margin-top: 30px;
+}
+
+.content{
+    margin-top: -200px;
+    padding: 40px 40px 70px 40px;
+}
+
+.content h1{
+    text-align: center;
+}
+
+
+.contact{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.contact h2 {
+    text-align: center;
+    padding : 40px 0px 0px 0px;
+}
+
+.kiri{
+    border-left: 1px solid black;
+}
+
+.kiri ul h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.kiri ul li{
+    list-style: none;
+    text-align: center;
+}
+
+.table{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 10px;
+    font-size: 20px;
+}
+
+.contact table{
+    font-size: 14px;
+}
+
+.skill h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.skill .container{
+    padding: 0px 200px;
+    margin-bottom: 50px;
+}
+
+
+
+#footer{
+    margin-top: 50px;
+    height: 300px;
+    padding:30px 0px 30px 0px;
+}
+
+#footer h2{
+    margin-bottom: 50px;
+}
+
+#footer a{
+    color:white;
+}
+
+#footer a:hover{
+    margin-left: 30px;
+    transition-duration: .7s;
+}
+
+
+/* hp */
+
+@media (max-width: 991.98px) { 
+    #jumbotron{
+        margin-top: 50px;
+        height: 400px;
+    }
+
+    .content{
+        margin-top : -200px;
+    }
+
+    .table{
+        margin-top: 50px;
+        line-height: 10px;
+        font-size: 10px;
+    }
+    .contact table{
+        font-size: 10px;
+    }
+
+    .kiri{
+        border-top: 1px solid black;
+        border-left: 0px solid black;
+    }
+
+    .obj{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .obj p{
+        text-align: left;
+        line-height: 10px;
+        margin-top: 15px;
+        font-size: 10px;
+    }
+
+    .skill .container{
+        padding: 0px 0px;
+    }
+ }

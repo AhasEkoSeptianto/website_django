@@ -1,0 +1,25 @@
+#jumbotron{
+    height: 700px;
+    margin-top: 30px;
+}
+/* main */
+
+.choices{
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+
+.choices ul li a{
+    color:#534c4c;
+}
+
+@media (max-width: 767.98px) { 
+    #jumbotron{
+        height: 500px;
+    }
+
+    .choices ul li a{
+        font-size: 10px;
+    }
+ }

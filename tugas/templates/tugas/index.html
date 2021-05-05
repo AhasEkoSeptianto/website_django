@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'tugas/css/style.css' %}">
+{% endblock css %}
+    
+{% block backgroundImage %}
+    <div style="background-image: url('/static/img/tugas.jpg');
+  background-size: cover;">
+{% endblock backgroundImage %}
+
+{% block backgroundImageend %}
+  </div>
+{% endblock backgroundImageend %}
+
+{% block jumbotron %}
+
+{% endblock jumbotron %}
+  
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="container content">
+          <h3 style="text-align: center; color: dark; padding:280px 0px 150px 0px; text-align: center; font-family:Georgia, 'Times New Roman', Times, serif"><strong>Daftar Perkuliahan</strong></h3>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-11 choices" style="margin-bottom:100px">
+                    <ul class="nav justify-content-center ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Semester 2
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="2/binggrisII">B.inggris II</a>
+                              <a class="dropdown-item" href="2/kalkulus">Kalkulus</a>
+                              <a class="dropdown-item" href="2/pemrogramanI">Pemrograman I</a>
+                              <a class="dropdown-item" href="2/statistika">Statistika</a>
+                              <a class="dropdown-item" href="2/jaringankomputer">Jaringan Komputer</a>
+                              <a class="dropdown-item" href="2/teknologiinternet">Teknologi Internet</a>
+                              <a class="dropdown-item" href="2/designgrafisII">Design Grafis II </a>
+                              <a class="dropdown-item" href="2/pkn">Pancasila & Kewarganegaraan</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Semester 3
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="3/arsitekturdanorganisasikomputer">Arsitekktur & Organisasi Komputer</a>
+                            <a class="dropdown-item" href="3/sistemoperasi">Sistem Operasi</a>
+                            <a class="dropdown-item" href="3/pemrogramanweb">Pemrograman Web</a>
+                            <a class="dropdown-item" href="3/pemrogramanII">Pemrograman II</a>
+                            <a class="dropdown-item" href="3/sistembasisdataII">Sistem Basis Data II</a>
+                            <a class="dropdown-item" href="3/interaksimanusiadankomputer">Interaksi Manusia Dan Komputer</a>
+                            <a class="dropdown-item" href="3/matematikadiskrit">Matematika Diskrit</a>
+                            <a class="dropdown-item" href="3/strukturdata">Struktur Data</a>
+                          </div>
+                      </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Semester 4
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="4/pemrogramanIII">Pemrograman III</a>
+                              <a class="dropdown-item" href="4/ecommerce">E-Commerce</a>
+                              <a class="dropdown-item" href="4/teknikkompilasi">Teknik Kompilasi</a>
+                              <a class="dropdown-item" href="4/pemrogramanwebII">Pemrograman Web II</a>
+                              <a class="dropdown-item" href="4/komunikasidata">Komunikasi Data</a>
+                              <a class="dropdown-item" href="4/sisteminformasimanajemen">Sistem Informasi Manajemen</a>
+                              <a class="dropdown-item" href="4/metodenumerik">Metode Numerik</a>
+                              <a class="dropdown-item" href="4/kecerdasanbuatan">Kecerdasan Buatan</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Semester 5
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="5/kriptografidankeamananinformasi">Kriptografi Dan Keamanan Informasi</a>
+                              <a class="dropdown-item" href="5/pemrogramanasembler">Pemrograman ASEMBLER</a>
+                              <a class="dropdown-item" href="5/bahasaindonesia">Bahasa Indonesia</a>
+                              <a class="dropdown-item" href="5/microprosessor">MICROPROSESSOR</a>
+                              <a class="dropdown-item" href="5/teorybahasadanautotama">Teory Bahasa Dan Autotama</a>
+                              <a class="dropdown-item" href="5/sistemberkas">Sistem Berkas</a>
+                              <a class="dropdown-item" href="5/teknikrisetoperasional">Teknik Riset Operasional</a>
+                              <a class="dropdown-item" href="5/sistembasisdata">Sistem Basis Data</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Semester 6
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="6/analisadanperancangansistem">Analisa & Perancangan Sistem</a>
+                              <a class="dropdown-item" href="6/datawarehouse">Datawarehouse</a>
+                              <a class="dropdown-item" href="6/metodologipenelitian">Metodologi Penelitian</a>
+                              <a class="dropdown-item" href="6/rekayasaperangkatlunak">Rekayasa Perangkat Lunak</a>
+                              <a class="dropdown-item" href="6/teknologimultimediainteraktif">Teknologi Multimedia Interaktif</a>
+                              <a class="dropdown-item" href="6/pemodelandansimulasi">Pemodelan & Simulasi</a>
+                              <a class="dropdown-item" href="6/manajemenproyeksisisteminformasi">Manajemen Proyeksi Sistem Informasi</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Semester 7
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="7/sistemterdistribusi">Sistem Terdistribusi</a>
+                            <a class="dropdown-item" href="7/kuliahkerjapraktek">Kuliah Kerja Praktek</a>
+                            <a class="dropdown-item" href="7/etikaprofesi">Etika Profesi</a>
+                          </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Semester 8
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="8/skripsi">Skripsi</a>
+                          <a class="dropdown-item" href="8/pengembangankepribadian">Pengembangan Kepribadian</a>
+                          <a class="dropdown-item" href="8/pengolahancitra">Pengolahan Citra</a>
+                        </div>
+                    </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+    

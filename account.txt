@@ -1,0 +1,5 @@
+admin
+aaseko100465
+
+django-cleanup
+https://github.com/un1t/django-cleanup.git

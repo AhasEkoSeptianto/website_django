@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'aplikasi/css/styleadd.css' %}">
+{% endblock css %}
+    
+
+{% block jumbotron %}
+
+{% endblock jumbotron %}
+    
+
+{% block content %}
+    <div class="container content shadow bg-white p-4">
+        <h3>Tambah App</h3>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            {# if error Image Field #}
+            {% if error %}
+                <ul class="text-danger">
+                    <li>{{error}}</li>
+                </ul>
+            {% endif %}
+            
+            {# Myforms #}
+            {% for form in form %}
+                <p>{{form.label}}</p>
+                <p>{{form}}</p>
+            {% endfor %}
+        
+        <a href="{% url 'aplikasi:tambah' %}"><button class="btn btn-primary" type="submit">Tambah</button></a>
+        </form>
+    </div>
+{% endblock content %}
+    

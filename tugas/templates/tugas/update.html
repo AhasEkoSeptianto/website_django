@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css %}
+	
+{% endblock css %}
+
+{% block jumbotron %}
+	
+{% endblock jumbotron %}
+
+{% block content %}
+
+	<h3 style="margin: 200px 0px 90px 0px; text-align: center;">Update Files</h3>
+    <div class="container shadow content" id="list">
+    <form method="POST" enctype="multipart/form-data">
+    	{% csrf_token %}
+    	{{dataForm}}
+	    <a href=""><button class="btn btn-info btn-sm mt-4 mb-4">UPDATE</button></a>	
+    </form>
+
+
+  </div>
+{% endblock content %}

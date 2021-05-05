@@ -1,0 +1,52 @@
+#carouselExampleControls{
+    margin-top: 100px;
+    padding:50px;
+}
+
+#footer{
+    margin-top: 50px;
+    height: 300px;
+    padding:30px 0px 30px 0px;
+}
+
+#footer h2{
+    margin-bottom: 50px;
+}
+
+#footer a{
+    color:white;
+}
+
+#footer a:hover{
+    margin-left: 30px;
+    transition-duration: .7s;
+}
+
+/* phone */
+@media (max-width: 991.98px) {
+
+    #jumbotron{
+        margin-top: 50px;
+        height: 400px;
+    }
+    .content{
+        margin-top : -70px;
+    }
+
+    .menu .atas .clor{
+        margin-top: -50px;
+        margin-bottom: 0px;
+    }
+
+    .menu .warna a img{
+        width: 190px;
+    }
+
+    #carouselExampleControls{
+        padding:0px;
+        margin-bottom: 50px;
+    }
+
+    
+
+ }

@@ -1,0 +1,22 @@
+.li ul li{
+    margin-right: -10px;
+    font-size: 15px;
+}
+
+.li ul li a{
+    color: black;
+}
+
+.li ul li:hover{
+    background-color:#acacac;    
+}
+
+.li ul li a:hover{
+    color: white;
+}
+
+@media (min-width: 992px) { 
+    .li ul li a{
+        color: black;
+    }
+ }

@@ -1,0 +1,36 @@
+
+#carouselExampleControls{
+    margin-top: 100px;
+    padding:50px;
+}
+
+#footer{
+    margin-top: 50px;
+    height: 300px;
+    padding:30px 0px 30px 0px;
+}
+
+#footer h2{
+    margin-bottom: 50px;
+}
+
+#footer a{
+    color:white;
+}
+
+#footer a:hover{
+    margin-left: 30px;
+    transition-duration: .7s;
+    text-decoration-line: none;
+    text-decoration-style: none;
+}
+
+/* phone */
+@media (max-width: 991.98px) { 
+    #carouselExampleControls{
+        padding:0px;
+        margin-bottom: 50px;
+    }
+    
+
+ }

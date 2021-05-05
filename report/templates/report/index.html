@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'report/css/style.css' %}">
+{% endblock css %}
+  
+{% block backgroundImage %}
+    <div style="background-image: url('/static/img/laporan.jpg');
+  background-size: cover;">
+{% endblock backgroundImage %}
+
+{% block backgroundImageend %}
+  </div>
+{% endblock backgroundImageend %}
+
+
+{% block jumbotron %}
+  
+{% endblock jumbotron %}
+  
+
+{% block content %}
+    <div class="container-fluid pilihan" style="background-image: url('/report/static/report/img/bg.jpg');">
+            <h3   style="color:dark; padding:280px 0px 150px 0px; text-align: center; font-family:Georgia, 'Times New Roman', Times, serif"><strong>Laporan Harian</strong></h3>
+            <div class="row d-flex justify-content-center" style="margin-bottom:100px ;">
+                <div class="col-lg-6 choices mb-5">
+                    <ul class="nav justify-content-center ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              2020
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="2020/januari/">Januari</a>
+                              <a class="dropdown-item" href="2020/februari">February</a>
+                              <a class="dropdown-item" href="2020/maret">Maret</a>
+                              <a class="dropdown-item" href="2020/april">April</a>
+                              <a class="dropdown-item" href="2020/mei">Mei</a>
+                              <a class="dropdown-item" href="2020/juni">Juni</a>
+                              <a class="dropdown-item" href="2020/juli">Juli</a>
+                              <a class="dropdown-item" href="2020/agustus">Agustus</a>
+                              <a class="dropdown-item" href="2020/september">September</a>
+                              <a class="dropdown-item" href="2020/oktober">Oktober</a>
+                              <a class="dropdown-item" href="2020/november">November</a>
+                              <a class="dropdown-item" href="2020/desember">Desember</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              2021
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="2021/januari">Januari</a>
+                              <a class="dropdown-item" href="2021/februari">February</a>
+                              <a class="dropdown-item" href="2021/maret">Maret</a>
+                              <a class="dropdown-item" href="2021/april">April</a>
+                              <a class="dropdown-item" href="2021/mei">Mei</a>
+                              <a class="dropdown-item" href="2021/juni">Juni</a>
+                              <a class="dropdown-item" href="2021/juli">Juli</a>
+                              <a class="dropdown-item" href="2021/agustus">Agustus</a>
+                              <a class="dropdown-item" href="2021/september">September</a>
+                              <a class="dropdown-item" href="2021/oktober">Oktober</a>
+                              <a class="dropdown-item" href="2021/november">November</a>
+                              <a class="dropdown-item" href="2021/desember">Desember</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              2022
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="2022/januari">Januari</a>
+                              <a class="dropdown-item" href="2022/februari">February</a>
+                              <a class="dropdown-item" href="2022/maret">Maret</a>
+                              <a class="dropdown-item" href="2022/april">April</a>
+                              <a class="dropdown-item" href="2022/mei">Mei</a>
+                              <a class="dropdown-item" href="2022/juni">Juni</a>
+                              <a class="dropdown-item" href="2022/juli">Juli</a>
+                              <a class="dropdown-item" href="2022/agustus">Agustus</a>
+                              <a class="dropdown-item" href="2022/september">September</a>
+                              <a class="dropdown-item" href="2022/oktober">Oktober</a>
+                              <a class="dropdown-item" href="2022/november">November</a>
+                              <a class="dropdown-item" href="2022/desember">Desember</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              2023
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="2023/januari">Januari</a>
+                              <a class="dropdown-item" href="2023/februari">February</a>
+                              <a class="dropdown-item" href="2023/maret">Maret</a>
+                              <a class="dropdown-item" href="2023/april">April</a>
+                              <a class="dropdown-item" href="2023/mei">Mei</a>
+                              <a class="dropdown-item" href="2023/juni">Juni</a>
+                              <a class="dropdown-item" href="2023/juli">Juli</a>
+                              <a class="dropdown-item" href="2023/agustus">Agustus</a>
+                              <a class="dropdown-item" href="2023/september">September</a>
+                              <a class="dropdown-item" href="2023/oktober">Oktober</a>
+                              <a class="dropdown-item" href="2023/november">November</a>
+                              <a class="dropdown-item" href="2023/desember">Desember</a>
+                            </div>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+    </div>
+{% endblock content %}
+    

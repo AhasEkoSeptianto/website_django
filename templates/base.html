@@ -1,0 +1,58 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <title>{{judul}}</title>
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endblock css %}
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    {% include 'snippets/styles.html' %}
+    
+  </head>
+  <body>
+
+        {% block backgroundImage %}
+        {% endblock backgroundImage %}
+
+        <!-- navbar -->
+        {% include 'snippets/navbar.html' %}
+        <!-- jumbotron -->
+        
+            
+
+        {% block jumbotron %}
+          {% include 'snippets/jumbotron.html' %}        
+        {% endblock jumbotron %}
+          
+
+        
+
+        {% block content %}
+          
+        {% endblock content %}
+
+
+        {% include 'snippets/footer.html' %}
+
+        {% block backgroundImageend %}
+        {% endblock backgroundImageend %}
+          
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    {% include 'snippets/script.html' %}
+    
+    {% block script %}
+      
+    {% endblock script %}
+      
+
+</body>
+</html>

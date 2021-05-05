@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% load static %}
+    
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'about/css/style.css' %}">
+    {% endblock css %}
+        
+    
+    <div class="container-fluid">
+        <div class="container shadow bg-white">
+            <div class="row content">
+                <div class="col ">
+                    <h1>Profile</h1>
+                    <table class="table table-borderless d-flex justify-content-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nama</th>
+                            <th scope="col">: Ahas Eko Septianto</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">Tanggal Lahir</th>
+                            <th scope="col">: 27 September 2020</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">Negara</th>
+                            <th scope="col">: Indonesia</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">Agama</th>
+                            <th scope="col">: Islam</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">Status</th>
+                            <th scope="col">: Mahasiswa</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">Alamat</th>
+                            <th scope="col">: jl.al-bahar rt 01/02 Harapan Jaya Bekasi Utara</th>
+                          </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="row contact">
+                <div class="col-sm">
+                    <div class="container">
+                    <h2>Contact</h2>
+                    <table class="table table-borderless table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">Email</th>
+                            <th scope="col">: ahaseko1@gmail.com</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">Phone</th>
+                            <th scope="col">: 085351196080</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">Whatsapp</th>
+                            <th scope="col">: 085351196080</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">Telegram</th>
+                            <th scope="col">: @AhasEkoSeptianto</th>
+                          </tr>
+                        </thead>
+                    </table>
+                    </div>
+                </div>
+                <div class="col-sm kiri">
+                    <ul>
+                        <h2>Interest</h2>
+                        <table class="table table-sm table-borderless text-center ">
+                          <thead>
+                            <tr>
+                              <th scope="col">Coding</th>
+                            </tr>
+                            <tr>
+                              <th scope="col">Desain</th>
+                            </tr>
+                            <tr>
+                              <th scope="col">Python Developtment</th>
+                            </tr>
+                          </thead>
+                      </table>
+                    </ul>
+                </div>
+            </div>
+            <div class="row skill">
+                <div class="col">
+                    <h1>Skill</h1>
+                    <div class="container">
+                        <h5>Python</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h5>c++</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h5>c#</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h5>java</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h5>sql</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h5>javascript</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h5>html,css</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h5>photoshop</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h5>Ethical Hacking</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h5>Linux</h5>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portofolio -->
+            <div class="row ">
+              <div class="container ">
+              <h1 class="p-5" style="text-align: center;">portofolio</h1>
+                <div class="row row-cols-1 row-cols-md-3">
+                  
+                  {% for app in myapp %}
+                    
+                    <div class="col mb-4">
+                      <div class="card">
+                        <img src="/media/{{app.gambaraplikasi}}" height="200px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{app.namaaplikasi}}</h5>
+                          <p class="card-text">{{app.contentaplikasi}}</p>
+                          <a href="/aplikasi/{{app.slug}}"><button class="btn btn-primary" type="submit">Check it</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  {% endfor %}
+                    
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+{% endblock content %}
+    

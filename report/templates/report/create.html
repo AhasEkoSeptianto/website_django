@@ -1,0 +1,18 @@
+{% extends 'report/report.html' %}
+
+{% load static %}
+{% block tombol %}
+
+<div class="container bg-white" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" id="create">
+  <form method="POST">
+    {% csrf_token %}
+
+    {% for pos in post %}
+      {{pos.label}}
+      {{pos}}
+    {% endfor %}
+    <a href="{% url 'report:data' tahun bulan %}"><button class="btn btn-primary btn-sm mt-3">Tambah</button></a>  
+  </form>
+  </div>
+{% endblock tombol %}
+  

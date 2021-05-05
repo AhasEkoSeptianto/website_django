@@ -1,0 +1,21 @@
+body {
+  background-color: #BDBDBD;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.login {
+  margin:auto;
+  margin-top:100px;
+  padding:20px;
+  width:400px;
+  background-color:#EFEFEF;
+  border-radius: 5px;
+}
+
+.logout {
+  float: right
+}

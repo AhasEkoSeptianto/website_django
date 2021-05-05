@@ -1,0 +1,38 @@
+{% extends 'report/report.html' %}
+
+{% load static %}
+
+
+
+{% block report %}
+  {% for post in data %}
+  <tr>
+    <td>{{post.tanggal}}</td>
+    <td>{{post.body}}</td>
+  </tr> 
+  {% endfor %}
+{% endblock report %}
+
+{% block tombol %}
+<link rel="stylesheet" href="{% static 'report/css/update.css' %}">
+
+<div class="container bg-white" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" id="data">
+  <div class="container li" >
+    <h1 style="margin: 10px ; color: #acacac;"  >Update</h1>
+  </div>
+
+  <form method="POST">
+  {% csrf_token %}
+  {% for pos in database %}
+    {{pos.label}}
+    {{pos}}
+  {% endfor %}
+  <a href="{% url 'report:datatambah' tahun bulan %}"><button class="btn btn-primary btn-sm mt-3 mb-3">Update</button></a>  
+</form>
+
+
+  
+
+  
+</div>
+{% endblock tombol %}
