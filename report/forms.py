@@ -30,6 +30,7 @@ class postForm(forms.ModelForm):
             'tanggal' : forms.TextInput(
                attrs={
                 'class':'form-control',
+                'readonly':'',
                 },
             ),
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{% static 'report/css/stylereport.css' %}">
 {% endblock css %}
     
+{% load showid %}
 
 {% block jumbotron %}
   
@@ -116,8 +117,8 @@
                             <tr>
                               <td>{{post.tanggal}}</td>
                               <td>{{post.body}}</td>
-                              <td><a href="update/{{post.id}}/#data"><div class="btn btn-sm btn-warning">Update</div></a></td>
-                              <td><a href="delete/{{post.id}}/#data"><div class="btn btn-sm btn-danger">Delete</div></a></td>
+                              <td><a href="update/{{post|private:'bulan'}}/#data"><div class="btn btn-sm btn-warning">Update</div></a></td>
+                              <td><a href="delete/{{post|private:bulan}}/#data"><div class="btn btn-sm btn-danger">Delete</div></a></td>
                             </tr> 
                             {% endfor %}
                           {% endblock report %}

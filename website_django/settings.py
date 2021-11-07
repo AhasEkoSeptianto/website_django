@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import urllib
+from urllib.parse import quote
+import pymongo
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -82,6 +85,17 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'Mongodb': {
+        'ENGINE': 'djongo',
+        'NAME': 'WebsitePribady',
+        'CLIENT': {
+            'host': "mongodb+srv://ahaseko:aaseko100465@cluster0.hqm02.mongodb.net/WebsiteDjango?retryWrites=true&w=majority",
+            "username": "ahaseko",
+            "password": "aaseko100465",
+            "name": "WebsiteDjango",
+            "authMechanism": "SCRAM-SHA-1",
+        },
     }
 }
 

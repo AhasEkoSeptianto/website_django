@@ -5,12 +5,12 @@
 
 
 {% block report %}
-  {% for post in data %}
+  <!-- {% for post in data %}
   <tr>
     <td>{{post.tanggal}}</td>
     <td>{{post.body}}</td>
   </tr> 
-  {% endfor %}
+  {% endfor %} -->
 {% endblock report %}
 
 {% block tombol %}
@@ -23,10 +23,10 @@
 
   <form method="POST">
   {% csrf_token %}
-  {% for pos in database %}
+  <!-- {% for pos in database %}
     {{pos.label}}
     {{pos}}
-  {% endfor %}
+  {% endfor %} -->
   <a href="{% url 'report:datatambah' tahun bulan %}"><button class="btn btn-primary btn-sm mt-3 mb-3">Update</button></a>  
 </form>
 

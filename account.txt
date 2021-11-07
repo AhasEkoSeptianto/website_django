@@ -1,5 +1,5 @@
-admin
-aaseko100465
+ahaseko
+ahaseko1@gmail.com : admin12345
 
 django-cleanup
 https://github.com/un1t/django-cleanup.git
