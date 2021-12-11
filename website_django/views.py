@@ -66,6 +66,6 @@ def galery(request):
     token = jwt.encode({"username": user}, SECRET_JWT)
     # print(token.decode('UTF-8'))
     # return redirect('index')
-    # return redirect('https://my-galerys.netlify.app/galery?token=' + token.decode('UTF-8'))
-    return redirect('http://localhost:3000/galery?token=' + token.decode('UTF-8'))
+    return redirect('https://my-galerys.netlify.app/galery?token=' + token.decode('UTF-8'))
+    # return redirect('http://localhost:3000/galery?token=' + token.decode('UTF-8'))
     
